@@ -140,6 +140,11 @@ function elevateDegree()
 	var currentDegree = CURRENT_POINTS.length - 1;
 	var wantedDegree = DEGREE_INPUT.value;
 	
+	if(CURRENT_POINTS.length <= 1)
+	{
+		return;
+	}
+	
 	if(currentDegree > wantedDegree)
 	{
 		alert("Could not elevate to a lower degree!");
