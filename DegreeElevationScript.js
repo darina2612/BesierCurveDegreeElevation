@@ -13,6 +13,9 @@ var CURRENT_POINTS = Array();
  function onStart()
  {
  	CANVAS = document.getElementById("canvas");
+ 	CANVAS.width = document.body.clientWidth;
+ 	CANVAS.height = 480;
+ 	
 	CONTEXT = CANVAS.getContext("2d");
 	DRAW_BUTTON = document.getElementById("drawCurveButton");
 	DEGREE_INPUT = document.getElementById("degreeInput");
