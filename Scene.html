@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>
+	<title> Degree Elevation </title>
+	<script type="text/javascript" src="DegreeElevationScript.js"> </script>
+</head>
+
+<body onload="onStart()">
+	<canvas id="canvas" width = "1200" height = "480" style="border:1px solid #000000;">
+	</canvas>
+	
+	<button id="drawCurveButton" onclick="drawCurve()" >
+	Draw Curve
+	</button>
+	
+	<button id="clearButton" onclick="clearCanvas()">
+	Clear
+	</button>
+	
+	<input id="degreeInput" type="number" name="quantity" min="0">
+	
+	<button id="elevateButton" onclick="elevateDegree()">
+	Elevate Degree
+	</button>
+
+</body>
+
+</html>
